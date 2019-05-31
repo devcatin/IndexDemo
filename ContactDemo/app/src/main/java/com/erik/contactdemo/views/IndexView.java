@@ -1,4 +1,4 @@
-package com.erik.contactdemo;
+package com.erik.contactdemo.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -73,9 +73,6 @@ public class IndexView extends View {
             if (touchIndex == i) {
                 //绘制文字圆形背景
                 canvas.drawCircle(itemWidth / 2, itemHeight / 2 + i * itemHeight, 23, bgPaint);
-                //wordsPaint.setColor(Color.BLUE);
-            } else {
-                //wordsPaint.setColor(Color.WHITE);
             }
             //获取文字的宽高
             Rect rect = new Rect();

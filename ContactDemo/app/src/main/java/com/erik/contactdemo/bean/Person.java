@@ -1,4 +1,6 @@
-package com.erik.contactdemo;
+package com.erik.contactdemo.bean;
+
+import com.erik.contactdemo.utils.PinYinUtils;
 
 public class Person {
 

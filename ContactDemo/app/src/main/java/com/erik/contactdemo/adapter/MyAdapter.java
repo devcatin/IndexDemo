@@ -1,4 +1,4 @@
-package com.erik.contactdemo;
+package com.erik.contactdemo.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.erik.contactdemo.bean.Person;
+import com.erik.contactdemo.R;
 
 import java.util.List;
 

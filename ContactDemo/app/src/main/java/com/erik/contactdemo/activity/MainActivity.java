@@ -1,6 +1,5 @@
-package com.erik.contactdemo;
+package com.erik.contactdemo.activity;
 
-import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +7,11 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.erik.contactdemo.views.IndexView;
+import com.erik.contactdemo.adapter.MyAdapter;
+import com.erik.contactdemo.bean.Person;
+import com.erik.contactdemo.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -101,22 +105,23 @@ public class MainActivity extends AppCompatActivity {
         list = new ArrayList<>();
         list.add(new Person("Dave"));
         list.add(new Person("阿钟"));
-        //省略一些....
+        list.add(new Person("发财"));
         list.add(new Person("胡继群"));
         list.add(new Person("隔壁老王"));
         list.add(new Person("姜宇航"));
-        list.add(new Person("Dave"));
-        list.add(new Person("阿钟"));
-        //省略一些....
-        list.add(new Person("胡继群"));
-        list.add(new Person("隔壁老王"));
-        list.add(new Person("姜宇航"));
-        list.add(new Person("Dave"));
-        list.add(new Person("阿钟"));
-        //省略一些....
-        list.add(new Person("胡继群"));
-        list.add(new Person("隔壁老王"));
-        list.add(new Person("姜宇航"));
+        list.add(new Person("单丹"));
+        list.add(new Person("重庆"));
+        list.add(new Person("分析"));
+        list.add(new Person("查理一世"));
+        list.add(new Person("仇人"));
+        list.add(new Person("重耳"));
+        list.add(new Person("八戒"));
+        list.add(new Person("麒麟"));
+        list.add(new Person("沙盒"));
+        list.add(new Person("I"));
+        list.add(new Person("J"));
+        list.add(new Person("G"));
+        list.add(new Person("H"));
 
         //对集合排序
         Collections.sort(list, new Comparator<Person>() {
